@@ -1,0 +1,33 @@
+body {
+    background-image: url("/images/clouds.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 10px;
+    max-width: 50%;
+    position: relative;
+}
+
+.row1 {
+    display: flex;
+    width: 100%;
+}
+
+.row2 {
+    margin-top: -50px;
+    display: flex;
+    width: 100%;
+}
+
+img.heart {
+    width: 50%;
+    transition: all .2s ease;
+}
+
+img.heart:hover{
+    opacity: 0;
+}
