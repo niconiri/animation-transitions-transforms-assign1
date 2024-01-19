@@ -4,17 +4,45 @@ body {
     background-size: 50%;
     display: flex;
     justify-content: center;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+h1 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
 }
 
 #container {
-    margin-top: 10px;
+    margin-top: 60px;
     max-width: 50%;
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .row1 {
     display: flex;
     width: 100%;
+}
+
+.row-boy1 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.boy {
+    width: 50%;
+}
+
+
+.row-boy2 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 .row2 {
@@ -23,11 +51,13 @@ body {
     width: 100%;
 }
 
-img.heart {
+.heart {
     width: 50%;
-    transition: all .2s ease;
+    transition: all 1s ease;
 }
 
-img.heart:hover{
+
+.heart:hover {
     opacity: 0;
+    transform: translateY(-150px);
 }
